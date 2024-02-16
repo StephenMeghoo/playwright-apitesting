@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "tests:api": "playwright test --config=api.config.ts --project=Chromium",
-    "tests:exm": "playwright test --config=playwright.config.ts --project=Chromium",
     "pretest": "tsc --incremental -p tests/tsconfig.json",
     "test": "playwright test -c tests-out"
   },
