@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tests:api": "playwright test --config=api.config.ts --project=Chromium",
-    "tests:exm": "playwright test --config=playwright.config.ts --project=Chromium",
+    "tests:api": "playwright test --config=api.config.ts --project=Chromium --reporter mochawesome",
     "pretest": "tsc --incremental -p tests/tsconfig.json",
     "test": "playwright test -c tests-out"
   },
@@ -13,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.34.3"
+    "@playwright/test": "^1.34.3",
+    "mochawesome": "^7.1.3"
   }
 }
