@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tests:api": "playwright test --config=api.config.ts --project=Chromium --reporter=json",
+    "tests:api": "playwright test --config=api.config.ts --project=Chromiumgit",
     "tests:apireport": "playwright test --config=api.config.ts --project=Chromium --reporter mochawesome",
     "tests:html": "playwright test --config=api.config.ts --reporter mochawesome",
     "pretest": "tsc --incremental -p tests/tsconfig.json",
