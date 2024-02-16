@@ -8,7 +8,7 @@ test.describe.parallel("API Testing", () => {
         const response = await request.get(`${process.env.URL}/users/2`)
         const responseBody = JSON.parse(await response.text())
 
-        expect(response.status()).toBe(20)
+        expect(response.status()).toBe(200)
         expect(responseBody.data.id).toBe(2)
         expect(responseBody.data.first_name).toBe('Janet')
         expect(responseBody.data.last_name).toBe('Weaver')
